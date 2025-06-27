@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wilky Martin - Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style_portofolio.css">
+  </head>
+  <body>
+    <div class="tech-grid"></div>
+    
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <img src="pasfoto.png" alt="Wilky Martin" class="profile-photo">
+          <h1 class="name">Wilky Martin</h1>
+          <p class="tagline">Undergraduate Student at the University of Indonesia </p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav">
+      <div class="container">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main">
+      <section id="about" class="section about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>Third-year Electrical Engineering Student at Universitas Indonesia with a strong interest in electronics,
+                embedded systems, and IoT. Experienced in IoT projects using ESP32 and Blynk, PCB and circuit
+                design with Proteus and LTSPICE, and contributing to drone development in a robotics team. Quick to
+                adapt, eager to learn, and comfortable working in collaborative environments.</p>
+              <div class="skills">
+                <h3>Core Technologies</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">HTML</span>
+                  <span class="skill-tag">CSS</span>
+                  <span class="skill-tag">Javascript</span>
+                  <span class="skill-tag">Python for A.I</span>
+                  <span class="skill-tag">Arduino & ESP32</span>
+                  <span class="skill-tag">C Programming</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-icon">⚡</div>
+              <h3>Analog RC Circuit </h3>
+              <img src="RC_Oscillator.jpg" alt="RC_Oscillator" class="project-image">
+                <div class="project-details">
+                  <div class="detail-box">Analog RC oscillator that generates a sinusoidal wave at a frequency of 433 MHz.</div>
+                  <div class="detail-box">Utilizes a three-stage RC network with a total phase shift of 360° using the LTC6268-10 op-amp.</div>
+                  <div class="detail-box">Amplification is adjusted by resistors R1 (720ohm) and R2 (272 ohm), with power supply at +5V and 5V.</div>
+                </div>
+              <div class="project-tech">
+                <span>LTSPICE</span>
+                <span>KiCad</span>
+              </div>
+            </div>
+            
+            <div class="project-card">
+              <div class="project-icon">🔥</div>
+              <h3>Automatic and Manual Fire Alarm Detector</h3>
+              <img src="electronic_project.jpg" alt="Automatic and Manual Fire Alarm Detector" class="project-image">
+              <div class="project-details">
+                  <div class="detail-box"><strong>Normal Condition</strong><br>The thermistor does not detect heat, and the infrared sensor does not detect any flames. The green LED lights up to indicate a safe condition, and the buzzer remains off with no alert.</div>
+                  <div class="detail-box"><strong>Spark Detected Condition</strong><br>The infrared sensor detects a spark and sends a HIGH signal, while the thermistor remains LOW as it does not detect heat. The red LED lights up to warn of the spark. If there is uncertainty, the user can press the manual button to activate the alarm.</div>
+                  <div class="detail-box"><strong>• Fire Condition</strong><br>The thermistor detects high temperature and sends a HIGH signal, and the infrared sensor detects flames and also sends a HIGH signal. When both sensors (heat and flame) send a HIGH signal, the system detects a fire. The red LED lights up, and the buzzer activates to issue a fire warning.</div>
+              </div>
+              <div class="project-tech">
+                <span>Proteus</span>
+              </div>
+            </div>
+            
+            <div class="project-card">
+              <div class="project-icon">🤖</div>
+              <h3>classifying inverter circuit data using Principal Component Analysis (PCA) and K-Means Clustering</h3>
+              <img src="classification_ML.jpg" alt="at classifying inverter circuit " class="project-image">
+              <div class="project-details">
+                  <div class="detail-box">The analysis shows that the features n_k (motor speed) and u_dc_k(sampling current), u_dc_k1(sampling past) (DC-link voltage) are highly correlated.</div>
+                  <div class="detail-box">PCA helps filter out the most important features, reducing noise and simplifying the clustering process</div>
+                  <div class="detail-box">Once the key features are identified, K-Means Clustering is applied to group the inverter circuit data based on the patterns identified by PCA.</div>
+              </div>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Machine Learning</span>
+              </div>
+            </div>
+          </div>
+  
+
+
+
+              <!-- Tambahkan di sini, sebelum </div> -->
+              <div class="project-card">
+                <div class="project-icon">📡</div>
+                <h3>LNA Common-Source dengan Inductive Degeneration (5.0–5.2 GHz)</h3>
+                <img src="LNA_inductive.png" alt="LNA Circuit" class="project-image">
+                <div class="project-details">
+                  <div class="detail-box">
+                    Designed and simulated a single-stage Low Noise Amplifier ...
+                  </div>
+                  <div class="detail-box">
+                    <strong>Key Results</strong>
+                    <ol>
+                      <li>Gain (S21): 14.695 dB</li>
+                      <li>S11: –12.072 dB</li>
+                      <li>S22: –12.496 dB</li>
+                      <li>Noise Figure: 0.582 dB</li>
+                      <li>Power Consumption: 109 mW</li>
+                    </ol>
+                  </div>
+                  <div class="detail-box">Tools Used: ADS (Advanced Design System)</div>
+                </div>
+                <div class="project-tech">
+                  <span>ADS Software</span>
+                  <span>RF Electronics</span>
+                </div>
+              </div>
+            </div> <!-- Penutup .projects-grid -->
+    </section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2 class="section-title">My Contact</h2>
+          <div class="contact-content">
+            <div class="contact-methods">
+              <a href="mailto:wilkymart83@gmail.com" class="contact-method">
+                <div class="contact-icon">📧</div>
+                <span>wilkymart83@gmail.com</span>
+              </a>
+              <a href="https://github.com/wilky8333" class="contact-method" target="_blank">
+                <div class="contact-icon">💻</div>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/wilky-martin" class="contact-method" target="_blank">
+                <div class="contact-icon">🔗</div>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://instagram.com/wilkymartin" class="contact-method" target="_blank">
+                <div class="contact-icon">📷</div>
+                <span>Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; Wilky Martin | Electrical Engineering Student at University of Indonesia(2025)</p>
+      </div>
+    </footer>
+  </body>
+</html>
